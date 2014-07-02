@@ -48,7 +48,6 @@
 
 
 
-
 (defroutes app-routes
   (GET "/" [] "Hello World")
   (GET "/json" [] json)
@@ -72,8 +71,4 @@
     (make-table rsc) 
     (where {(uuid-keyword rsc) (java.util.UUID/fromString pkey)})))
 
-(find-db "iface" {:iface_uuid #uuid "e908b0da-e0a8-11e3-b627-000c29acdacb"})
-(find-by-uuid "iface" "e908b0da-e0a8-11e3-b627-000c29acdacb")
-(find-db "iface" {})
-(insert-into {:location_name "CHINA" :is_japan false} )
  

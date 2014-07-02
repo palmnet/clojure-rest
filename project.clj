@@ -10,7 +10,9 @@
                                               com.sun.jdmk/jmxtools
                                               com.sun.jmx/jmxri]]
                  [clj-http "0.9.1"]
+                 [clj-http "0.9.1"]
                  [postgresql/postgresql "8.4-702.jdbc4"]
+                 [org.clojure/java.jdbc "0.3.4"]
                  [compojure "1.1.6"]]
   :plugins [[lein-ring "0.8.10"]]
   :ring {:handler clojure-rest.handler/app :auto-reload? true :auto-refresh? true}
